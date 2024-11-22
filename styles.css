@@ -60,3 +60,14 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+/* Tambahkan ini di bagian bawah file styles.css */
+
+footer {
+    margin-top: 40px; /* Menambahkan jarak atas untuk footer */
+    padding: 20px; /* Menambahkan padding untuk footer */
+    background-color: #f4f4f4; /* Warna latar belakang footer */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    font-size: 14px; /* Ukuran font untuk footer */
+    color: #333; /* Warna teks footer */
+}
