@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 50px; /* Menambahkan margin atas untuk memberi jarak dari atas */
+}
+
+#candidates {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto; /* Menambahkan margin bawah */
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px; /* Mengubah radius border untuk tampilan lebih halus */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Menambahkan padding untuk card */
+    height: 450px;
+    width: 350px; /* Mengubah lebar card */
+    transition: transform 0.2s; /* Animasi saat hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.candidate-image {
+    width: 300px; /* Mengubah lebar gambar menjadi 300px */
+    height: 300px; /* Mengubah tinggi gambar menjadi 300px */
+    border-radius: 10px; /* Mengubah radius border untuk gambar */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px; /* Menambahkan jarak antara suara dan tombol */
+}
+
+button {
+    padding: 10px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* Membuat tombol memiliki ukuran yang sama */
+    margin: 0 5px; /* Menambahkan jarak antar tombol */
+}
+
+button:hover {
+    background-color: #218838;
+}

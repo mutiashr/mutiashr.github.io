@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemungutan Suara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rekapitulasi Hasil Pemilihan Ketua Drum Band BSM</h1>
+    <div id="candidates">
+        <div class="card">
+            <img src="calonA.png" alt="Regitha Novitasari" class="candidate-image">
+            <h2>Regitha Novitasari</h2>
+            <p>Suara: <span id="voteA">0</span></p>
+            <div class="button-group">
+                <button onclick="addVote('A')">+</button>
+                <button onclick="subtractVote('A')">-</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="calonB.png" alt="Yolanda Arba Zulmi" class="candidate-image">
+            <h2>Yolanda Arba Zulmi</h2>
+            <p>Suara: <span id="voteB">0</span></p>
+            <div class="button-group">
+                <button onclick="addVote('B')">+</button>
+                <button onclick="subtractVote('B')">-</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="calonC.png" alt="Puguh Q. Q. D. W." class="candidate-image">
+            <h2>Puguh Q. Q. D. W.</h2>
+            <p>Suara: <span id="voteC">0</span></p>
+            <div class="button-group">
+                <button onclick="addVote('C')">+</button>
+                <button onclick="subtractVote('C')">-</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
