@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mutia Sahira — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================================================================
+     NAVIGATION
+     ================================================================ -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">MUTIA SAHIRA</a>
+    <ul class="nav-links">
+      <li><a href="#work">WORK</a></li>
+      <li><a href="#research">RESEARCH</a></li>
+      <li><a href="#leadership">LEADERSHIP</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#contact" class="nav-cta">LET'S TALK</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span class="nh-top"></span>
+      <span class="nh-mid"></span>
+      <span class="nh-bot"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile-menu" id="mobile-menu">
+  <a href="#work" class="mobile-nav-link">WORK</a>
+  <a href="#research" class="mobile-nav-link">RESEARCH</a>
+  <a href="#leadership" class="mobile-nav-link">LEADERSHIP</a>
+  <a href="#experience" class="mobile-nav-link">EXPERIENCE</a>
+  <a href="#contact" class="mobile-nav-link">LET'S TALK</a>
+</div>
+
+<!-- ================================================================
+     HERO
+     ================================================================ -->
+<section id="hero">
+  <div class="hero-inner">
+
+    <!-- LEFT: TEXT -->
+    <div class="hero-left">
+      <div class="status-badge" style="width:fit-content">
+        <span class="status-dot"></span>
+        AVAILABLE · CLASS OF 2026
+      </div>
+
+      <h1 class="hero-name">
+        MUTIA<br>
+        <span class="name-underline" id="hero-underline">SAHIRA</span>
+      </h1>
+
+      <p class="hero-role">
+        I like working where data, design, and people meet. I turn messy problems into clearer
+         <strong>products, systems, and decisions.</strong>
+      </p>
+
+      <!-- Proof row: metric badges -->
+      <div class="hero-proof-row">
+        <div class="metric-badge">
+          <span class="metric-num">3.90</span>
+          <span class="metric-label">GPA / 4.00</span>
+        </div>
+        <div class="metric-badge">
+          <span class="metric-num">300+</span>
+          <span class="metric-label">Clients</span>
+        </div>
+        <div class="metric-badge">
+          <span class="metric-num">3</span>
+          <span class="metric-label">Published Papers</span>
+        </div>
+        <div class="metric-badge">
+          <span class="metric-num">13+</span>
+          <span class="metric-label">Events Managed</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">GET IN TOUCH ↗</a>
+        <a href="#work" class="btn btn-outline">SEE MY WORK →</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: PHOTO -->
+    <div class="hero-right">
+      <div class="hero-chip hero-chip-1">
+        <span class="chip-dot chip-green"></span>
+        OPEN TO WORK
+      </div>
+
+      <div class="hero-photo-frame">
+        <img src="assets/foto linkedin3.png" alt="Mutia Sahira" />
+      </div>
+
+      <div class="hero-chip hero-chip-2">
+        <span class="chip-dot chip-blue"></span>
+        UNIVERSITAS SRIWIJAYA
+      </div>
+
+      <!-- Annotation card -->
+      <div class="hero-annotation">
+        <div class="ha-label">FOCUS &amp; STRENGTH</div>
+        <div class="ha-value">Data-Driven<br>Problem Solving</div>
+        <div class="ha-sub">Bridging Data, Systems, and User Experience</div>
+        <div class="ha-tags">
+          <span class="tag tag-mint">Bangkit 2024</span>
+          <span class="tag tag-lilac">ML Path</span>
+          <span class="tag tag-yellow">3 Papers</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     POSITIONING BRIDGE
+     ================================================================ -->
+<section id="bridge">
+  <div class="wrap">
+    <div class="eyebrow">Why the three disciplines belong together</div>
+
+    <div class="bridge-grid reveal">
+      <!-- Data -->
+      <div class="discipline-card dc-data">
+        <div class="dc-icon">📊</div>
+        <div class="dc-title">Data &amp; ML</div>
+        <div class="dc-proof">3 published papers. K-Means, CNN, Random Forest, from Tokopedia sales data and LPG 3 kg availability in Palembang to Formula 1 performance.</div>
+        <button class="dc-expand-btn" onclick="toggleDC(this)">
+          <span class="dc-btn-text">+ SEE DETAIL</span>
+        </button>
+        <div class="dc-detail">Python · Pandas · Scikit-learn · TensorFlow · Tableau · Jupyter · Google Colab · SQL. Published in JURTEKSI and Jurnal Buffer Informatika.</div>
+      </div>
+
+      <!-- Design -->
+      <div class="discipline-card dc-design">
+        <div class="dc-icon">🎨</div>
+        <div class="dc-title">UI/UX Design</div>
+        <div class="dc-proof">10+ prototypes across mobile, web, and desktop. Projects include government services, SaaS dashboards, accessibility apps, and a 3rd-place competition entry.</div>
+        <button class="dc-expand-btn" onclick="toggleDC(this)">
+          <span class="dc-btn-text">+ SEE DETAIL</span>
+        </button>
+        <div class="dc-detail">Figma · FigJam · Maze. UX research, user journey mapping, high-fidelity prototyping. Clients include Ministry of Public Works (PUPR), freelance brands, and NGOs.</div>
+      </div>
+
+      <!-- PM -->
+      <div class="discipline-card dc-pm">
+        <div class="dc-icon">🚀</div>
+        <div class="dc-title">Project Management</div>
+        <div class="dc-proof">13+ tech events. 1,000+ participants across GDGoC UNSRI events. Best Core Team. <br> As Telkom Indonesia Digistar Class Manager, improved submission rate from 85% to 98%.</div>
+        <button class="dc-expand-btn" onclick="toggleDC(this)">
+          <span class="dc-btn-text">+ SEE DETAIL</span>
+        </button>
+        <div class="dc-detail">Notion · Google Workspace · Excel. Cross-functional teams, crisis management, stakeholder communication. Both community (GDGoC) and corporate (Telkom) environments.</div>
+      </div>
+    </div>
+
+    <!-- Strategic Value strip -->
+    <div class="strat-strip reveal">
+      <div class="strat-item">
+        <div class="si-icon">🎓</div>
+        <div class="si-title">Published Researcher</div>
+        <div class="si-text">3 peer-reviewed journals in Data Science and ML. I contribute to the field's knowledge base, not just use its tools.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon">🚀</div>
+        <div class="si-title">Operational Scalability</div>
+        <div class="si-text">300+ freelance clients since 2021, with a personal system for time management and client handling that scales without compromising quality.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon">🤝</div>
+        <div class="si-title">Stakeholder Management</div>
+        <div class="si-text">Navigated complex requirements across GDGoC, university structures, and cross-functional teams to deliver events with 1,000+ attendees.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon">🔄</div>
+        <div class="si-title">Technical Translation</div>
+        <div class="si-text">Bridge technical complexity and user experience. I translate machine learning and system logic into clear, intuitive product experiences that make technology easier to understand and use.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     RESEARCH — DARK SECTION
+     ================================================================ -->
+<section id="research">
+  <div class="wrap">
+    <div class="eyebrow">Research &amp; Publications</div>
+    <h2 class="sec-title">3 peer-reviewed papers.<br>Real datasets. Real findings.</h2>
+    <p class="sec-sub">Published research at 22 — all from real-world problems: public infrastructure, e-commerce data, and sports analytics.</p>
+
+    <div class="research-papers reveal">
+
+      <!-- PAPER 01: F1 (lead researcher, most visual) -->
+      <div class="paper-item" id="paper-1">
+        <div class="paper-header" onclick="togglePaper('paper-1')">
+          <div class="paper-num">01</div>
+          <div class="paper-meta">
+            <div class="paper-title">K-Means Clustering for F1 Driver Performance Analysis (2024)</div>
+            <div class="paper-journal">Jurnal Buffer Informatika · October 2025 · Lead Researcher</div>
+          </div>
+          <div class="paper-toggle">+</div>
+        </div>
+        <div class="paper-body">
+          <div class="paper-grid">
+            <div>
+              <div class="paper-zone-label">CONTEXT</div>
+              <div class="paper-zone-text">The 2024 Formula 1 season generated a rich dataset of race-level performance metrics across the full grid. The question was simple: can unsupervised learning uncover performance patterns that conventional race commentary might overlook?</div>
+            </div>
+            <div>
+              <div class="paper-zone-label">APPROACH</div>
+              <div class="paper-zone-text">K-Means clustering with Elbow Method applied to normalized race metrics. Silhouette Scoring validated the cluster separation. Output translated into a live Streamlit dashboard.</div>
+            </div>
+            <div>
+              <div class="paper-zone-label">RESULT</div>
+              <div class="paper-zone-text">4 distinct performance tiers identified across the 2024 grid. Silhouette Score 0.5735. Published October 2025. Live dashboard + Colab notebook publicly available.</div>
+            </div>
+          </div>
+          <div class="paper-imgs">
+            <div class="paper-img-frame"><img src="assets/f1 1.png" alt="F1 Elbow Method Graph"></div>
+            <div class="paper-img-frame"><img src="assets/f1 2.png" alt="F1 K-Means Cluster Map"></div>
+          </div>
+          <div class="paper-metrics-row">
+            <div class="paper-metric">
+              <span class="pm-num">0.5735</span>
+              <span class="pm-label">Silhouette Score</span>
+            </div>
+            <div class="paper-metric">
+              <span class="pm-num">4</span>
+              <span class="pm-label">Performance Tiers</span>
+            </div>
+          </div>
+          <!-- Dashboard images -->
+          <div class="paper-zone-label" style="margin-bottom:12px;">STREAMLIT DASHBOARD — ML output made accessible</div>
+          <div class="paper-imgs">
+            <div class="paper-img-frame"><img src="assets/dashboard1.png" alt="F1 Dashboard Overview"></div>
+            <div class="paper-img-frame"><img src="assets/dashboard2.png" alt="F1 Dashboard Driver View"></div>
+          </div>
+          <div class="paper-links">
+            <a href="https://journal.fkom.uniku.ac.id/buffer/article/view/401" class="paper-link mint" target="_blank">READ ARTICLE →</a>
+            <a href="https://mutia-f1-dashboard.streamlit.app/" class="paper-link coral" target="_blank">LIVE DASHBOARD →</a>
+            <a href="https://colab.research.google.com/drive/1WdoQcthY-eUuXcHjVJfexHM24bgF5Edd?usp=sharing" class="paper-link periwinkle" target="_blank">GOOGLE COLAB →</a>
+          </div>
+          <div class="research-placeholder">
+            <div class="rp-label">REFLECTION</div>
+            <div class="rp-text">What would you change about the clustering approach? What did building the dashboard reveal that the paper didn't?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAPER 02: Cosmetic Sales (thesis) -->
+      <div class="paper-item" id="paper-2">
+        <div class="paper-header" onclick="togglePaper('paper-2')">
+          <div class="paper-num">02</div>
+          <div class="paper-meta">
+            <div class="paper-title">ML Algorithm Comparison for Cosmetic Sales Prediction</div>
+            <div class="paper-journal">JURTEKSI · September 2025 · Thesis Research</div>
+          </div>
+          <div class="paper-toggle">+</div>
+        </div>
+        <div class="paper-body">
+          <div class="paper-grid">
+            <div>
+              <div class="paper-zone-label">CONTEXT</div>
+              <div class="paper-zone-text">Tokopedia cosmetic sales data has a structural class imbalance, where bestsellers dominate and minority-class prediction becomes unreliable. This study compares four classification approaches instead of relying on a single algorithm.</div>
+            </div>
+            <div>
+              <div class="paper-zone-label">APPROACH</div>
+              <div class="paper-zone-text">SMOTE applied for class balancing. 4 classifiers trained: Random Forest, XGBoost, Logistic Regression, Naive Bayes. GridSearchCV for hyperparameter tuning. Evaluated on Accuracy + F1-Score.</div>
+            </div>
+            <div>
+              <div class="paper-zone-label">RESULT</div>
+              <div class="paper-zone-text">Random Forest identified as superior model. 85.3% accuracy, F1-Score 0.75. Published September 2025.</div>
+            </div>
+          </div>
+          <div class="paper-imgs">
+            <div class="paper-img-frame"><img src="assets/skripsi 1.png" alt="Algorithm Comparison Graph"></div>
+            <div class="paper-img-frame"><img src="assets/skripsi 2.png" alt="Model Performance Chart"></div>
+          </div>
+          <div class="paper-metrics-row">
+            <div class="paper-metric">
+              <span class="pm-num">85.3%</span>
+              <span class="pm-label">Accuracy</span>
+            </div>
+            <div class="paper-metric">
+              <span class="pm-num">0.75</span>
+              <span class="pm-label">F1-Score</span>
+            </div>
+            <div class="paper-metric">
+              <span class="pm-num">4</span>
+              <span class="pm-label">Classifiers Tested</span>
+            </div>
+          </div>
+          <div class="paper-links">
+            <a href="https://jurnal.stmikroyal.ac.id/index.php/jurteksi/article/view/4187" class="paper-link mint" target="_blank">READ ARTICLE →</a>
+          </div>
+          <div class="research-placeholder">
+            <div class="rp-label">REFLECTION</div>
+            <div class="rp-text">Why did Random Forest outperform XGBoost on this dataset? What would you do differently with a larger dataset? — To be completed.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAPER 03: LPG -->
+      <div class="paper-item" id="paper-3">
+        <div class="paper-header" onclick="togglePaper('paper-3')">
+          <div class="paper-num">03</div>
+          <div class="paper-meta">
+            <div class="paper-title">LPG 3KG Distribution Clustering — Palembang Subsidy Equity Analysis</div>
+            <div class="paper-journal">Jurnal Buffer Informatika · April 2025</div>
+          </div>
+          <div class="paper-toggle">+</div>
+        </div>
+        <div class="paper-body">
+          <div class="paper-grid">
+            <div>
+              <div class="paper-zone-label">CONTEXT</div>
+              <div class="paper-zone-text">Indonesia's subsidized LPG (3kg) is critical for low-income households. Distribution managed by outlet networks across sub-districts. When outlet density doesn't match population density, some areas get systematically under-served.</div>
+            </div>
+            <div>
+              <div class="paper-zone-label">APPROACH</div>
+              <div class="paper-zone-text">K-Means clustering with Elbow Method across Palembang sub-districts. Pandas for data cleaning, Scikit-learn for clustering, Matplotlib for visualization.</div>
+            </div>
+            <div>
+              <div class="paper-zone-label">RESULT</div>
+              <div class="paper-zone-text">Identified suboptimal outlet-to-population ratios in high-density areas such as Sukarami, providing a data foundation for distribution planning and more targeted subsidy allocation. Published April 2025.</div>
+            </div>
+          </div>
+          <div class="paper-imgs">
+            <div class="paper-img-frame"><img src="assets/lpg 1.png" alt="LPG Elbow Method Graph"></div>
+            <div class="paper-img-frame"><img src="assets/lpg 2.png" alt="LPG K-Means Distribution Map — Sukarami highlighted"></div>
+          </div>
+          <div class="paper-links">
+            <a href="https://journal.fkom.uniku.ac.id/buffer/article/view/385" class="paper-link mint" target="_blank">READ ARTICLE →</a>
+          </div>
+          <div class="research-placeholder">
+            <div class="rp-label">REFLECTION</div>
+            <div class="rp-text">What policy decisions could this analysis directly inform? What additional data would make the recommendations more actionable?</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /research-papers -->
+  </div>
+</section>
+
+<!-- ================================================================
+     MARQUEE
+     ================================================================ -->
+<div id="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>DATA × DESIGN × EXECUTION</span><span class="marquee-sep">·</span>
+    <span>3 PUBLISHED PAPERS</span><span class="marquee-sep">·</span>
+    <span>300+ CLIENTS</span><span class="marquee-sep">·</span>
+    <span>BANGKIT 2024</span><span class="marquee-sep">·</span>
+    <span>1,000+ PARTICIPANTS</span><span class="marquee-sep">·</span>
+    <span>FIGMA</span><span class="marquee-sep">·</span>
+    <span>PYTHON</span><span class="marquee-sep">·</span>
+    <span>TENSORFLOW</span><span class="marquee-sep">·</span>
+    <span>TELKOM INDONESIA</span><span class="marquee-sep">·</span>
+    <span>GDGOC UNSRI</span><span class="marquee-sep">·</span>
+    <!-- duplicate for seamless loop -->
+    <span>DATA × DESIGN × EXECUTION</span><span class="marquee-sep">·</span>
+    <span>3 PUBLISHED PAPERS</span><span class="marquee-sep">·</span>
+    <span>300+ CLIENTS</span><span class="marquee-sep">·</span>
+    <span>BANGKIT 2024</span><span class="marquee-sep">·</span>
+    <span>1,000+ PARTICIPANTS</span><span class="marquee-sep">·</span>
+    <span>FIGMA</span><span class="marquee-sep">·</span>
+    <span>PYTHON</span><span class="marquee-sep">·</span>
+    <span>TENSORFLOW</span><span class="marquee-sep">·</span>
+    <span>TELKOM INDONESIA</span><span class="marquee-sep">·</span>
+    <span>GDGOC UNSRI</span><span class="marquee-sep">·</span>
+  </div>
+  <div class="marquee-track">
+    <span>SCIKIT-LEARN</span><span class="marquee-sep">·</span>
+    <span>K-MEANS CLUSTERING</span><span class="marquee-sep">·</span>
+    <span>UX RESEARCH</span><span class="marquee-sep">·</span>
+    <span>INFORMATION SYSTEMS</span><span class="marquee-sep">·</span>
+    <span>85→98% SUBMISSION RATE</span><span class="marquee-sep">·</span>
+    <span>STREAMLIT</span><span class="marquee-sep">·</span>
+    <span>RANDOM FOREST</span><span class="marquee-sep">·</span>
+    <span>500+ DELIVERABLES</span><span class="marquee-sep">·</span>
+    <span>BEST CORE TEAM</span><span class="marquee-sep">·</span>
+    <span>PALEMBANG · INDONESIA</span><span class="marquee-sep">·</span>
+    <!-- duplicate -->
+    <span>SCIKIT-LEARN</span><span class="marquee-sep">·</span>
+    <span>K-MEANS CLUSTERING</span><span class="marquee-sep">·</span>
+    <span>UX RESEARCH</span><span class="marquee-sep">·</span>
+    <span>INFORMATION SYSTEMS</span><span class="marquee-sep">·</span>
+    <span>85→98% SUBMISSION RATE</span><span class="marquee-sep">·</span>
+    <span>STREAMLIT</span><span class="marquee-sep">·</span>
+    <span>RANDOM FOREST</span><span class="marquee-sep">·</span>
+    <span>500+ DELIVERABLES</span><span class="marquee-sep">·</span>
+    <span>BEST CORE TEAM</span><span class="marquee-sep">·</span>
+    <span>PALEMBANG · INDONESIA</span><span class="marquee-sep">·</span>
+  </div>
+</div>
+
+<!-- ================================================================
+     WORK — ALL PROJECTS
+     ================================================================ -->
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">Selected Work</div>
+    <h2 class="sec-title">Projects that did something.</h2>
+    <p class="sec-sub">Real data, real clients, real outcomes — not just portfolio pieces.</p>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="data">DATA &amp; ML</button>
+      <button class="filter-btn" data-filter="design">UI/UX DESIGN</button>
+      <button class="filter-btn" data-filter="dev">DEV</button>
+      <button class="filter-btn" data-filter="multimedia">MULTIMEDIA</button>
+    </div>
+
+    <!-- ── TIER 1: SIMSPAM PUPR (Featured Design Case Study) ── -->
+    <div class="project-featured visible" data-cat="design" id="feat-simspam">
+      <div class="pf-header">
+        <div class="pf-meta">
+          <div class="pf-num">01</div>
+          <div class="tags-row" style="margin-bottom:8px">
+            <span class="tag tag-lilac">UI/UX DESIGN</span>
+            <span class="tag tag-peach">FREELANCE</span>
+            <span class="tag tag-periwinkle">GOVERNMENT</span>
+          </div>
+          <div class="pf-title">SIMSPAM — Public Water Supply Monitoring System</div>
+          <div class="pf-role">UI/UX Designer (Freelance) · Ministry of Public Works, Indonesia (PUPR)</div>
+        </div>
+        <div class="pf-metrics">
+          <div class="metric-badge">
+            <span class="metric-num">4</span>
+            <span class="metric-label">Core Modules</span>
+          </div>
+          <div class="metric-badge">
+            <span class="metric-num">Gov</span>
+            <span class="metric-label">Client Type</span>
+          </div>
+        </div>
+      </div>
+      <div class="pf-body">
+        <div class="pf-hook">
+        "A freelance UI/UX redesign project for a public water supply monitoring system. The client provided a visual reference, and my role was to turn the concept into a cleaner, more structured, and presentation-ready interface."
+        </div>
+
+        <!-- Process timeline -->
+        <div class="process-timeline">
+          <div class="pt-label">DESIGN PROCESS</div>
+          <div class="pt-steps" id="simspam-steps">
+            <div class="pt-step active" onclick="switchStep('simspam',0)" data-idx="0">
+              <span class="pt-step-num">01</span>
+              <span class="pt-step-name">REFERENCE</span>
+            </div>
+            <div class="pt-step" onclick="switchStep('simspam',1)" data-idx="1">
+              <span class="pt-step-num">02</span>
+              <span class="pt-step-name">STRUCTURE</span>
+            </div>
+            <div class="pt-step" onclick="switchStep('simspam',2)" data-idx="2">
+              <span class="pt-step-num">03</span>
+              <span class="pt-step-name">REDESIGN</span>
+            </div>
+            <div class="pt-step" onclick="switchStep('simspam',3)" data-idx="3">
+              <span class="pt-step-num">04</span>
+              <span class="pt-step-name">PROTOTYPE</span>
+            </div>
+          </div>
+          <div class="pt-panel active" id="simspam-panel-0">
+            <div class="pt-panel-text">Started from a client-provided visual reference and translated the existing concept into a structured dashboard interface.</div>
+          </div>
+          <div class="pt-panel" id="simspam-panel-1">
+            <div class="pt-panel-text">Organized the provided content into 4 core areas: service coverage, regional performance, infrastructure tracking, and operational insights.</div>
+          </div>
+          <div class="pt-panel" id="simspam-panel-2">
+            <div class="pt-panel-text">Refined layout, visual hierarchy, spacing, component consistency, and information grouping to improve dashboard readability.</div>
+          </div>
+          <div class="pt-panel" id="simspam-panel-3">
+            <div class="pt-panel-text">High-fidelity Figma prototype for desktop. Regional performance comparison module designed as the primary stakeholder touchpoint — the module they use most often for reporting.</div>
+          </div>
+        </div>
+
+        <div class="pf-images">
+          <div class="pf-img-wrap">
+            <img src="assets/pupr.png" alt="SIMSPAM PUPR — Government Water Supply Dashboard">
+          </div>
+        </div>
+
+        <div class="pf-2col">
+          <div>
+            <span class="pf-zone-label">PROBLEM</span>
+            <div class="pf-zone-text">The client provided a visual reference for a water supply monitoring dashboard. My role was to translate that reference into a cleaner and more structured UI design.</div>
+          </div>
+          <div>
+            <span class="pf-zone-label">SOLUTION</span>
+            <div class="pf-zone-text">Redesigned the dashboard across 4 core modules, improving information hierarchy, visual consistency, and readability while keeping the original concept and requirements intact.</div>
+          </div>
+        </div>
+
+        <div class="reflection-block">
+          <div class="rb-label">REFLECTION</div>
+          <div class="rb-text">This project reinforced that redesign is not just about making an interface look better. Even with an existing direction, decisions around hierarchy, spacing, and information grouping can significantly improve how a product communicates.</div>
+        </div>
+      </div>
+      <div class="pf-footer">
+        <div class="tags-row">
+          <span class="tag">FIGMA</span>
+          <span class="tag">DASHBOARD DESIGN</span>
+          <span class="tag">GOVERNMENT</span>
+          <span class="tag">FREELANCE</span>
+        </div>
+        <div class="pf-links">
+          <a href="https://www.figma.com/proto/AIyjGwZSu2MTt6PzyZYaNv/SSO---PUPR?node-id=3-2271&page-id=0%3A1&starting-point-node-id=1%3A23&scaling=scale-down-width&content-scaling=fixed&t=y1BJEkZfQt6GNjt3-1" class="btn btn-outline btn-lilac" target="_blank">VIEW PROTOTYPE →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TIER 1: DIGISTAR / TELKOM (Featured Leadership) ── -->
+    <div class="project-featured visible" id="feat-digistar">
+      <div class="pf-header">
+        <div class="pf-meta">
+          <div class="pf-num" style="color:#7597ee;-webkit-text-stroke:2px var(--ink)">02</div>
+          <div class="tags-row" style="margin-bottom:8px">
+            <span class="tag tag-periwinkle">LEADERSHIP</span>
+            <span class="tag" style="border-color:var(--ink);background:var(--yellow);color:var(--ink)">TELKOM INDONESIA</span>
+          </div>
+          <div class="pf-title">Class Manager — Digistar Class 2025</div>
+          <div class="pf-role">Class Manager · Telkom Indonesia · 3-month intensive program</div>
+        </div>
+        <div class="pf-metrics">
+          <div class="metric-badge" style="background:var(--periwinkle);border-color:var(--ink)">
+            <span class="metric-num" style="color:var(--white)">85%</span>
+            <span class="metric-label" style="color:rgba(255,255,255,0.7)">Before</span>
+          </div>
+          <div style="font-family:var(--font-mono);font-size:28px;font-weight:700;align-self:center">→</div>
+          <div class="metric-badge">
+            <span class="metric-num">98%</span>
+            <span class="metric-label">Submission Rate</span>
+          </div>
+        </div>
+      </div>
+      <div class="pf-body">
+        <div class="pf-hook">
+          "A 3-month remote role supporting a Telkom Indonesia learning program. As Class Manager, I monitored 10+ participants, coordinated with mentors, and helped improve assignment submission from 85% to 98%"
+        </div>
+
+        <div class="pf-2col">
+          <div>
+            <span class="pf-zone-label">PROBLEM</span>
+            <div class="pf-zone-text">An 85% assignment submission rate meant 15% of participants were consistently falling behind. No early-warning system existed to catch at-risk participants before accumulated late work caused dropout. The problem was operational.</div>
+          </div>
+          <div>
+            <span class="pf-zone-label">APPROACH</span>
+            <div class="pf-zone-text">Managed participant progress through regular submission monitoring, direct follow-ups, and mentor coordination. When participants started falling behind, I followed up directly and helped communicate their progress to the relevant mentors.</div>
+          </div>
+        </div>
+
+        <div class="pf-images">
+          <div class="pf-img-wrap">
+            <img src="assets/dci ss 2.jpeg" alt="Digistar Class Session Overview">
+          </div>
+          <div class="pf-img-wrap">
+            <img src="assets/dci ss 3.jpeg" alt="Mentorship Coordination">
+          </div>
+          <div class="pf-img-wrap">
+            <img src="assets/dci ss-1.png" alt="Class Management">
+          </div>
+        </div>
+
+        <div class="reflection-block">
+          <div class="rb-label">REFLECTION</div>
+          <div class="rb-text">Managing a remote cohort taught me that keeping people on track is less about constant supervision and more about knowing when to follow up, how to communicate, and when to involve the right person.</div>
+        </div>
+      </div>
+      <div class="pf-footer">
+        <div class="tags-row">
+          <span class="tag">PROJECT MANAGEMENT</span>
+          <span class="tag">STAKEHOLDER LIAISON</span>
+          <span class="tag">OPERATIONS</span>
+          <span class="tag tag-periwinkle">TELKOM INDONESIA</span>
+        </div>
+        <div style="font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:0.1em;color:var(--pencil);text-transform:uppercase">NO EXTERNAL LINK AVAILABLE</div>
+      </div>
+    </div>
+
+    <!-- ── TIER 2 EXPANDABLE CARDS ── -->
+
+    <!-- Yappy (3rd place competition) -->
+    <div class="project-card visible" data-cat="design" id="card-yappy">
+      <div class="pc-collapsed">
+        <div class="pc-top-row">
+          <div class="pc-num-title">
+            <div class="pc-num">03</div>
+            <div class="pc-title-group">
+              <div class="pc-title">Yappy — Language Learning App</div>
+              <div class="pc-role">UX Lead (Research + Prototyping)</div>
+            </div>
+          </div>
+          <button class="pc-expand-btn" onclick="toggleCard('card-yappy')">
+            <span class="pc-expand-text">+ EXPAND</span>
+            <span class="pc-collapse-text">− COLLAPSE</span>
+          </button>
+        </div>
+        <div class="tags-row">
+          <span class="tag tag-lilac">UI/UX</span>
+          <span class="tag tag-yellow">★ 3RD PLACE · SIFEST 2024</span>
+          <span class="tag">FIGMA</span>
+          <span class="tag">UX RESEARCH</span>
+        </div>
+        <div class="pc-hook">"A familiar problem with language learning apps: everyone gets pushed through the same learning path. Yappy explores a different approach: start with why you want to learn."</div>
+      </div>
+      <div class="pc-expanded">
+        <div class="pe-3col">
+          <div>
+            <div class="pe-col-label">CONTEXT</div>
+            <div class="pe-col-text">SIFEST 2024 design competition. We explored a common gap in language learning apps: users have different reasons for learning, but many platforms still rely on a standardized level-by-level experience.</div>
+          </div>
+          <div>
+            <div class="pe-col-label">APPROACH</div>
+            <div class="pe-col-text">Explored goal-based learning through competitive analysis and user journey mapping. Yappy offers different learning modes based on user goals, including Classic, Speaking, Professional, Literature, and Travel.
+              <br> The concept was extended with mentor-led courses, community discussions, podcasts, and video content to support different learning preferences.</div>
+          </div>
+          <div>
+            <div class="pe-col-label">RESULT</div>
+            <div class="pe-col-text">3rd place at SIFEST 2024. Designed a high-fidelity Figma prototype for Yappy, a personalized language learning app built around <strong> what users want to achieve, not just what level they are on.</strong></div>
+          </div>
+        </div>
+        <div class="pe-images">
+          <div class="pe-img-frame"><img src="assets/yappy.png" alt="Yappy App Interface"></div>
+        </div>
+        <div class="pe-links">
+          <a href="https://www.figma.com/proto/xNH5s2mwFa56893nHRqGtd/YAPPY?page-id=0%3A1&node-id=274-2116&node-type=frame&viewport=287%2C-5077%2C0.95&t=0ztylpRVizuwGsnx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=274%3A1604&show-proto-sidebar=1" class="btn btn-outline btn-lilac" target="_blank">VIEW PROTOTYPE →</a>
+        </div>
+        <div class="reflection-block">
+          <div class="rb-label">REFLECTION</div>
+          <div class="rb-text">The strongest idea in Yappy was shifting the starting point from "What level are you?" to "Why are you learning?" If developed further, I would validate which learning goals users actually prioritize and whether goal-based paths improve engagement and learning outcomes.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Invoice Generator -->
+    <div class="project-card visible" data-cat="dev" id="card-invoice">
+      <div class="pc-collapsed">
+        <div class="pc-top-row">
+          <div class="pc-num-title">
+            <div class="pc-num">04</div>
+            <div class="pc-title-group">
+              <div class="pc-title">Invoice Generator — QRIS-Enabled Freelance Toolkit</div>
+              <div class="pc-role">Solo Developer · Live Product</div>
+            </div>
+          </div>
+          <button class="pc-expand-btn" onclick="toggleCard('card-invoice')">
+            <span class="pc-expand-text">+ EXPAND</span>
+            <span class="pc-collapse-text">− COLLAPSE</span>
+          </button>
+        </div>
+        <div class="tags-row">
+          <span class="tag tag-coral">DEV</span>
+          <span class="tag tag-yellow">DEPLOYED · NETLIFY</span>
+          <span class="tag">VANILLA JS</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">jsPDF</span>
+        </div>
+        <div class="pc-hook">"After managing 300+ freelance clients, I realized I was spending too much time creating invoices. So I built a tool to handle it faster."</div>
+      </div>
+      <div class="pc-expanded">
+        <div class="pe-3col">
+          <div>
+            <div class="pe-col-label">CONTEXT</div>
+            <div class="pe-col-text">300+ freelance clients since 2021 means a lot of invoices. Creating them manually was repetitive, time-consuming, and easy to get wrong. I wanted a lightweight solution without relying on another platform.</div>
+          </div>
+          <div>
+            <div class="pe-col-label">SOLUTION</div>
+            <div class="pe-col-text">Built a client-side invoice generator with customizable invoice details, branded PDF output, and QRIS payment display. PDF generation is handled with jsPDF, with no backend or payment middleware required.</div>
+          </div>
+          <div>
+            <div class="pe-col-label">RESULT</div>
+            <div class="pe-col-text">Live on Netlify. 100% client-side architecture. The project turned a repetitive administrative task into a faster, reusable process.</div>
+          </div>
+        </div>
+        <div class="pe-images">
+          <div class="pe-img-frame"><img src="assets/invoice preview.jpeg" alt="Invoice UI Preview"></div>
+          <div class="pe-img-frame"><img src="assets/invoice 2.png" alt="Invoice Generator Dashboard"></div>
+        </div>
+        <div class="pe-links">
+          <a href="https://mcnsterjae-invoice.netlify.app/" class="btn btn-primary" target="_blank">LIVE DEMO →</a>
+          <a href="https://github.com/mutiashr/invoice-generator" class="btn btn-outline btn-coral" target="_blank">GITHUB →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TIER 3 GRID — remaining design projects ── -->
+    <div style="margin:32px 0 16px">
+      <div class="eyebrow">UI/UX — Full Design Portfolio</div>
+    </div>
+    <div class="projects-grid-3">
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-uokey')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#E1F5EE,#9FE1CB)">
+          <img src="assets/uokey.png" alt="Uokey Mental Health App">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">MOBILE</span><span class="tag">MENTAL HEALTH</span></div>
+          <div class="pt3-title">Uokey — Mental Health Companion</div>
+          <div class="pt3-desc">Research-driven mood tracking and psychological self-assessment. Careful tone and color psychology for a safe, non-clinical experience.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-sigap')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#FAECE7,#F5C4B3)">
+          <img src="assets/sigap.png" alt="SIGAP e-Government App">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">MOBILE</span><span class="tag tag-periwinkle">E-GOVERNMENT</span></div>
+          <div class="pt3-title">SIGAP — Public Service App</div>
+          <div class="pt3-desc">Digital platform simplifying access to government documents. Maximum accessibility, minimum cognitive load, designed for broad demographics.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-cinta')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#FBEAF0,#F4C0D1)">
+          <img src="assets/cintaberamal.png" alt="Cinta Beramal Donation App">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">MOBILE</span><span class="tag tag-peach">FREELANCE</span></div>
+          <div class="pt3-title">Cinta Beramal — Donation Platform</div>
+          <div class="pt3-desc">Trust-centered donation platform. Transparent campaigns and warm visual language to maximize giving confidence.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-eternaluxe')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#F1EFE8,#D3D1C7)">
+          <img src="assets/eternaluxe.png" alt="EternaLuxe Fashion Store">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">WEB</span><span class="tag">E-COMMERCE</span></div>
+          <div class="pt3-title">EternaLuxe — Fashion Store</div>
+          <div class="pt3-desc">Editorial e-commerce experience. Clean product discovery, intuitive filtering, seamless checkout for the modern shopper.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-axdif')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#E6F1FB,#B5D4F4)">
+          <img src="assets/axdif.png" alt="Axdif HR Dashboard">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">WEB APP</span><span class="tag">SAAS · HR</span></div>
+          <div class="pt3-title">Axdif — Recruitment Dashboard</div>
+          <div class="pt3-desc">HR dashboard streamlining recruitment workflow — tracking applicants and managing hiring stages. Take-home assignment.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-pkse')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#ffeeee,#ffcdcd)">
+          <img src="assets/pkse.png" alt="PKSE UNSRI Website">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">WEB</span><span class="tag">ORGANIZATIONAL</span></div>
+          <div class="pt3-title">PKSE UNSRI — Organization Website</div>
+          <div class="pt3-desc">Centralized web platform for Paguyuban Karya Salemba Empat UNSRI. Vision, mission, board members, and programs in structured architecture.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-langkah')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#ffeeee,#c8e6c9)">
+          <img src="assets/langkahmandiri.png" alt="Langkah Mandiri Accessibility App">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">MOBILE</span><span class="tag tag-mint">ACCESSIBILITY</span><span class="tag tag-peach">FREELANCE</span></div>
+          <div class="pt3-title">Langkah Mandiri — Audio Adventure</div>
+          <div class="pt3-desc">Accessible audio-based mobile experience for visually impaired users. Voice navigation, haptic feedback, inclusive interactions.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="design" onclick="openModal('modal-mojokerto')">
+        <div class="pt3-thumb" style="background:linear-gradient(135deg,#ffeeee,#f5c6c6)">
+          <img src="assets/mojokerto.png" alt="Mojokerto Government Website Redesign">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-lilac">WEB</span><span class="tag tag-periwinkle">GOVERNMENT</span><span class="tag tag-peach">FREELANCE</span></div>
+          <div class="pt3-title">Mojokerto Kabupaten — Gov Portal Redesign</div>
+          <div class="pt3-desc">Redesigned official Mojokerto Regency government website. New information architecture, clearer navigation, accessible citizen services.</div>
+          <div class="pt3-cta"><span class="btn btn-outline btn-lilac" style="font-size:11px;padding:6px 14px">VIEW PROTOTYPE →</span></div>
+        </div>
+      </div>
+
+      <!-- Multimedia tiles -->
+      <div class="project-tile visible" data-cat="multimedia" onclick="openModal('modal-mm1')">
+        <div class="pt3-thumb" style="background:var(--chalk)">
+          <img src="assets/kse1.png" alt="PKSE UNSRI Publication Design">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-peach">MULTIMEDIA</span></div>
+          <div class="pt3-title">PKSE UNSRI — Instagram Publications</div>
+          <div class="pt3-desc">Instagram publication design for PKSE UNSRI organizational communications.</div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="multimedia" onclick="openModal('modal-mm2')">
+        <div class="pt3-thumb" style="background:var(--chalk)">
+          <img src="assets/kse2.png" alt="PKSE UNSRI Board Profile">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-peach">MULTIMEDIA</span></div>
+          <div class="pt3-title">PKSE UNSRI — Board Profile</div>
+          <div class="pt3-desc">Board profile design series for PKSE UNSRI organizational identity.</div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="multimedia" onclick="openModal('modal-mm3')">
+        <div class="pt3-thumb" style="background:var(--chalk)">
+          <img src="assets/kse3.png" alt="KSE UNSRI Scholarship">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-peach">MULTIMEDIA</span></div>
+          <div class="pt3-title">KSE UNSRI Scholarship Registration</div>
+          <div class="pt3-desc">Visual design for KSE UNSRI scholarship registration campaign.</div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="multimedia" onclick="openModal('modal-mm4')">
+        <div class="pt3-thumb" style="background:var(--chalk)">
+          <img src="assets/kse5.png" alt="Social Media Design">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-peach">MULTIMEDIA</span></div>
+          <div class="pt3-title">Social Media &amp; Instagram Story Design</div>
+          <div class="pt3-desc">Social media insights and Instagram story design for organizational communications.</div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="multimedia" onclick="openModal('modal-mm5')">
+        <div class="pt3-thumb" style="background:var(--chalk)">
+          <img src="assets/kse4.png" alt="Rumah Belajar Sriwijaya">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-peach">MULTIMEDIA</span></div>
+          <div class="pt3-title">Rumah Belajar Sriwijaya Publication</div>
+          <div class="pt3-desc">Publication design for Rumah Belajar Sriwijaya educational community.</div>
+        </div>
+      </div>
+
+      <div class="project-tile visible" data-cat="multimedia" onclick="openModal('modal-mm6')">
+        <div class="pt3-thumb" style="background:var(--chalk)">
+          <img src="assets/kse6.png" alt="Freelance Infographic">
+        </div>
+        <div class="pt3-body">
+          <div class="tags-row"><span class="tag tag-peach">MULTIMEDIA</span></div>
+          <div class="pt3-title">Freelance Infographic Work</div>
+          <div class="pt3-desc">Infographic design from the 300+ client freelance portfolio (2021–present).</div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid-3 -->
+  </div>
+</section>
+
+<!-- ================================================================
+     LEADERSHIP / EVENTS
+     ================================================================ -->
+<section id="leadership">
+  <div class="wrap">
+    <div class="eyebrow">Leadership &amp; Events</div>
+    <h2 class="sec-title">Creativity on &amp; off stage.</h2>
+    <p class="sec-sub">1,000+ participants reached across 13+ events. Managing crowds, crises, and content — without burning people out.</p>
+
+    <!-- Metric hero: 85→98 already shown in Digistar above, so lead with GDGoC scale -->
+    <div class="leadership-hero reveal">
+      <div class="lh-metric-arrow">
+        <div class="metric-badge">
+          <span class="metric-num">1,000+</span>
+          <span class="metric-label">Total Participants</span>
+        </div>
+        <div style="font-family:var(--font-mono);font-size:24px;font-weight:700;color:var(--pencil)">across</div>
+        <div class="metric-badge">
+          <span class="metric-num">13+</span>
+          <span class="metric-label">Tech Events</span>
+        </div>
+      </div>
+      <div class="lh-text">
+        <div class="lh-title">Google Developer Group on Campus — UNSRI</div>
+        <div class="lh-desc">Part of the PM core team across 13+ tech events including Google Cloud Roadshow and Build with AI. Assigned tasks, managed crisis moments, and kept operations running across webinars, info sessions, and hands-on workshops — all without burning people out.<br><br>Recognized as <strong>Best Core Team Member</strong> for leadership and execution consistency.</div>
+      </div>
+      <div>
+        <div class="metric-badge" style="background:var(--yellow)">
+          <span class="metric-num">★</span>
+          <span class="metric-label">Best Core Team</span>
+        </div>
+        <div style="margin-top:16px">
+          <a href="https://gdg.community.dev/gdg-on-campus-universitas-sriwijaya-palembang-indonesia/" class="btn btn-outline" target="_blank" style="font-size:11px;padding:7px 14px">VIEW GDGOC PAGE →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GDGoC events accordion -->
+    <div class="gdgoc-events reveal">
+      <div class="gdgoc-header">
+        <span>GDGOC UNSRI — FEATURED EVENTS</span>
+        <span class="gdgoc-badge">3 EVENTS</span>
+      </div>
+
+      <div class="event-accordion-item" id="eai-inspireher">
+        <div class="eai-header" onclick="toggleEAI('eai-inspireher')">
+          <div class="eai-info">
+            <div class="eai-title">InspireHER 2025 — BLOOM · Women in Tech Conference</div>
+            <div class="eai-meta">Project Advisor · National conference · 2025</div>
+          </div>
+          <div class="eai-toggle">+</div>
+        </div>
+        <div class="eai-body">
+          <div class="eai-desc">Supported 35 committee members across six operational divisions for a national women-in-tech conference, providing guidance on sponsorship, venue coordination, speaker acquisition, and cross-division execution.</div>
+          <div class="eai-metrics">
+            <div class="eai-metric"><span class="eaim-n">250+</span><span class="eaim-l">Participants</span></div>
+            <div class="eai-metric"><span class="eaim-n">35</span><span class="eaim-l">Committee Members</span></div>
+            <div class="eai-metric"><span class="eaim-n">6</span><span class="eaim-l">Divisions</span></div>
+          </div>
+          <div class="eai-img"><img src="assets/inspireher.jpg" alt="InspireHER 2025 BLOOM Conference"></div>
+          <div class="tags-row" style="margin-bottom:16px">
+            <span class="tag tag-periwinkle">PROJECT ADVISOR</span>
+            <span class="tag">STAKEHOLDER MANAGEMENT</span>
+            <span class="tag">WOMEN IN TECH</span>
+          </div>
+          <a href="https://gdg.community.dev/events/details/google-gdg-on-campus-universitas-sriwijaya-palembang-indonesia-presents-inspireher-2025-bloom-be-limitless-own-outstanding-moves/" class="btn btn-outline btn-periwinkle" target="_blank" style="font-size:11px">VIEW EVENT PAGE →</a>
+        </div>
+      </div>
+
+      <div class="event-accordion-item" id="eai-gcr">
+        <div class="eai-header" onclick="toggleEAI('eai-gcr')">
+          <div class="eai-info">
+            <div class="eai-title">Google Cloud Roadshow 2025 — Palembang</div>
+            <div class="eai-meta">Project Advisor · Seminar + Workshop · 2025</div>
+          </div>
+          <div class="eai-toggle">+</div>
+        </div>
+        <div class="eai-body">
+          <div class="eai-desc">One day before the event, the planned venue became unavailable. Helped coordinate with faculty leadership to secure an alternative venue, keeping the seminar and hands-on workshop on schedule without disrupting the participant experience.</div>
+          <div class="eai-metrics">
+            <div class="eai-metric"><span class="eaim-n">300+</span><span class="eaim-l">Participants</span></div>
+            <div class="eai-metric"><span class="eaim-n">3</span><span class="eaim-l">Industry Speakers</span></div>
+            <div class="eai-metric"><span class="eaim-n">D-1</span><span class="eaim-l">Venue Crisis Solved</span></div>
+          </div>
+          <div class="eai-img"><img src="assets/gcr-roadshow.jpg" alt="Google Cloud Roadshow 2025"></div>
+          <div class="tags-row" style="margin-bottom:16px">
+            <span class="tag tag-periwinkle">PROJECT ADVISOR</span>
+            <span class="tag">CRISIS MANAGEMENT</span>
+          </div>
+          <a href="https://gdg.community.dev/events/details/google-gdg-on-campus-universitas-sriwijaya-palembang-indonesia-presents-google-cloud-roadshow-2025-palembang-indonesia/" class="btn btn-outline btn-periwinkle" target="_blank" style="font-size:11px">VIEW EVENT PAGE →</a>
+        </div>
+      </div>
+
+      <div class="event-accordion-item" id="eai-techtalk">
+        <div class="eai-header" onclick="toggleEAI('eai-techtalk')">
+          <div class="eai-info">
+            <div class="eai-title">Tech Talk: Game for Education 2025</div>
+            <div class="eai-meta">Project Advisor · Virtual Event · 2025</div>
+          </div>
+          <div class="eai-toggle">+</div>
+        </div>
+        <div class="eai-body">
+          <div class="eai-desc">Provided operational guidance to committee leads throughout the event, helping coordinate speakers, resolve unexpected issues, and keep the virtual session running smoothly for students and gaming industry professionals.</div>
+          <div class="eai-metrics">
+            <div class="eai-metric"><span class="eaim-n">100+</span><span class="eaim-l">Participants</span></div>
+            <div class="eai-metric"><span class="eaim-n">2</span><span class="eaim-l">Industry Speakers</span></div>
+          </div>
+          <div class="eai-img"><img src="assets/techtalk-education.jpg" alt="Tech Talk: Game for Education"></div>
+          <div class="tags-row" style="margin-bottom:16px">
+            <span class="tag tag-periwinkle">PROJECT ADVISOR</span>
+            <span class="tag">VIRTUAL EVENT</span>
+          </div>
+          <a href="https://gdg.community.dev/events/details/google-gdg-on-campus-universitas-sriwijaya-palembang-indonesia-presents-game-for-education-2025-exp-gain-explore-and-practice-the-gaming-industry/" class="btn btn-outline btn-periwinkle" target="_blank" style="font-size:11px">VIEW EVENT PAGE →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GDGoC image card -->
+    <div class="bento-row reveal">
+      <div class="bento-card" style="min-height:280px">
+        <img src="assets/gdg.png" alt="GDGoC Core Team" class="bento-img">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <div class="bento-tag">Event Management</div>
+          <div class="bento-title">Google Developer Group on Campus</div>
+          <div class="bento-desc">PM Core Team · 13+ events · 1,000+ total audience · Best Core Team Member award.</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="bento-card" style="min-height:132px">
+          <img src="assets/mc.PNG" alt="Mutia Sahira as MC" class="bento-img">
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-tag">Public Speaking</div>
+            <div class="bento-title">Master of Ceremony</div>
+            <div class="bento-desc">Hosted 10+ public events — confident communication, live audience management, composure under pressure.</div>
+          </div>
+        </div>
+        <div class="bento-card" style="min-height:132px">
+          <img src="assets/freelance.png" alt="Freelance Multimedia Work" class="bento-img">
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <div class="bento-tag">Multimedia Production</div>
+            <div class="bento-title">Freelance Multimedia Designer</div>
+            <div class="bento-desc">500+ digital assets for 300+ clients since 2021. Promotional videos, presentations, branding. 100% on-time delivery.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     EXPERIENCE TIMELINE
+     ================================================================ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow">Experience &amp; Education</div>
+    <h2 class="sec-title">Building since 2021.<br>Graduating 2026.</h2>
+    <p class="sec-sub">A path built through freelance work, selective programs, technical projects, research, and community leadership across design, technology, and project coordination.</p>
+
+    <div class="timeline reveal">
+
+      <!-- Bangkit (special node) -->
+      <div class="tl-item" id="tl-bangkit">
+        <div class="tl-node special" title="Selective program" onclick="toggleTL('tl-bangkit')">★</div>
+        <div class="tl-year">2024</div>
+        <div class="tl-card" onclick="toggleTL('tl-bangkit')">
+          <div class="tl-card-head">
+            <div>
+              <div class="tl-org">Bangkit Academy 2024</div>
+              <div class="tl-role">Machine Learning Path · Google · Gojek · Tokopedia</div>
+            </div>
+            <div class="tl-toggle">+</div>
+          </div>
+          <div class="tl-body">
+            <ul class="tl-bullets">
+              <li>Selective Google/Gojek/Tokopedia collaborative ML program</li>
+              <li>Machine Learning path — Python, TensorFlow, CNN, data preprocessing</li>
+              <li>Capstone: Sisain food waste classification app (PM + ML lead role)</li>
+              <li>Cohort: 2024</li>
+            </ul>
+            <div class="tags-row">
+              <span class="tag tag-mint">MACHINE LEARNING</span>
+              <span class="tag tag-yellow">★ SELECTIVE PROGRAM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telkom -->
+      <div class="tl-item" id="tl-telkom">
+        <div class="tl-node" onclick="toggleTL('tl-telkom')">✦</div>
+        <div class="tl-year">2025</div>
+        <div class="tl-card" onclick="toggleTL('tl-telkom')">
+          <div class="tl-card-head">
+            <div>
+              <div class="tl-org">Telkom Indonesia</div>
+              <div class="tl-role">Class Manager · Digistar Class 2025</div>
+            </div>
+            <div class="tl-toggle">+</div>
+          </div>
+          <div class="tl-body">
+            <ul class="tl-bullets">
+              <li>Bridge between mentors, participants, and program management</li>
+              <li>Introduced monitoring workflow that lifted submission rate 85% → 98%</li>
+              <li>10+ mentees managed across 3-month intensive corporate learning program</li>
+            </ul>
+            <div class="tags-row">
+              <span class="tag tag-periwinkle">PROJECT MANAGEMENT</span>
+              <span class="tag tag-yellow">85→98% METRIC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GDGoC -->
+      <div class="tl-item" id="tl-gdgoc">
+        <div class="tl-node" onclick="toggleTL('tl-gdgoc')">✦</div>
+        <div class="tl-year">2024–2025</div>
+        <div class="tl-card" onclick="toggleTL('tl-gdgoc')">
+          <div class="tl-card-head">
+            <div>
+              <div class="tl-org">GDGoC UNSRI</div>
+              <div class="tl-role">PM Core Team · Project Advisor</div>
+            </div>
+            <div class="tl-toggle">+</div>
+          </div>
+          <div class="tl-body">
+            <ul class="tl-bullets">
+              <li>PM core team for 13+ tech events reaching 1,000+ total participants</li>
+              <li>Project Advisor for InspireHER 2025, Google Cloud Roadshow, Tech Talk</li>
+              <li>Crisis management, cross-functional coordination, stakeholder communication</li>
+              <li>Recognized as Best Core Team Member</li>
+            </ul>
+            <div class="tags-row">
+              <span class="tag tag-periwinkle">LEADERSHIP</span>
+              <span class="tag tag-yellow">★ BEST CORE TEAM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNSRI -->
+      <div class="tl-item" id="tl-unsri">
+        <div class="tl-node" onclick="toggleTL('tl-unsri')">🎓</div>
+        <div class="tl-year">2021–2026</div>
+        <div class="tl-card" onclick="toggleTL('tl-unsri')">
+          <div class="tl-card-head">
+            <div>
+              <div class="tl-org">Universitas Sriwijaya</div>
+              <div class="tl-role">S1 Information Systems · GPA 3.90/4.00</div>
+            </div>
+            <div class="tl-toggle">+</div>
+          </div>
+          <div class="tl-body">
+            <ul class="tl-bullets">
+              <li>Information Systems — bridging technology, design, and business</li>
+              <li>GPA: 3.90 / 4.00</li>
+              <li>3 peer-reviewed papers published during study period (2025)</li>
+              <li>Palembang, Indonesia · 2026 graduate</li>
+            </ul>
+            <div class="tags-row">
+              <span class="tag tag-yellow">3.90 GPA</span>
+              <span class="tag">2026 GRADUATE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freelance -->
+      <div class="tl-item" id="tl-freelance">
+        <div class="tl-node" onclick="toggleTL('tl-freelance')">◆</div>
+        <div class="tl-year">2021–PRESENT</div>
+        <div class="tl-card" onclick="toggleTL('tl-freelance')">
+          <div class="tl-card-head">
+            <div>
+              <div class="tl-org">Freelance — Multimedia &amp; Design</div>
+              <div class="tl-role">Solo · 300+ Clients · 500+ Deliverables</div>
+            </div>
+            <div class="tl-toggle">+</div>
+          </div>
+          <div class="tl-body">
+            <ul class="tl-bullets">
+              <li>300+ clients served since 2021</li>
+              <li>500+ digital assets delivered — promotional videos, presentations, branding, digital campaigns</li>
+              <li>100% on-time delivery track record</li>
+              <li>Tools: Canva, Figma, CapCut, Adobe suite</li>
+            </ul>
+            <div class="tags-row">
+              <span class="tag tag-peach">MULTIMEDIA</span>
+              <span class="tag">SINCE 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CREDENTIALS & HONORS (ORGANIZED & COMPACT)
+     ================================================================ -->
+<section id="credentials">
+  <div class="wrap">
+    <div class="cred-header-row">
+      <div>
+        <div class="eyebrow">Proof of Competence</div>
+        <h2 class="sec-title">Validated Excellence.</h2>
+        <p class="sec-sub">Peer-reviewed publications, industry programs, and verified technical credentials.</p>
+      </div>
+      <div class="cred-filter-tabs">
+        <button class="c-tab active" onclick="filterCreds('all', this)">ALL CREDENTIALS</button>
+        <button class="c-tab" onclick="filterCreds('ml-ai', this)">AI & MACHINE LEARNING</button>
+        <button class="c-tab" onclick="filterCreds('research', this)">PUBLICATIONS & HONORS</button>
+        <button class="c-tab" onclick="filterCreds('org', this)">LEADERSHIP & DEV</button>
+      </div>
+    </div>
+
+    <!-- ── MASTER TIER 1: HIGH-IMPACT SPOTLIGHTS WITH SUB-MODULES ── -->
+    <div class="cred-flagship-stack reveal">
+
+      <!-- MASTER 1: BANGKIT 2024 -->
+      <div class="cred-flagship-card" data-cat="ml-ai">
+        <div class="cf-main">
+          <div class="cf-left">
+            <div class="tags-row" style="margin-bottom:8px">
+              <span class="tag tag-yellow">GOOGLE-LED ACADEMY</span>
+              <span class="tag tag-mint">GRADUATE WITH DISTINCTION</span>
+            </div>
+            <h3 class="cf-title">Bangkit Academy 2024 — Machine Learning Path</h3>
+            <p class="cf-issuer">Kemendikbudristek · Google · Gojek · Tokopedia · Traveloka</p>
+            <p class="cf-desc">Selective national AI incubation program. 900+ curriculum hours spanning Python automation, deep learning pipelines, generative models, and capstone project execution.</p>
+          </div>
+          <div class="cf-right">
+            <div class="cf-id-badge">ID: BA24/GRAD/XXIV-01/M315B4KX3165</div>
+            <button class="btn btn-outline btn-mint cf-toggle-btn" onclick="toggleCredDetail('cred-bangkit', this)">
+              <span>+ VIEW 6 VERIFIED COURSES</span>
+            </button>
+          </div>
+        </div>
+        <!-- Expandable Sub-courses drawer -->
+        <div class="cf-drawer" id="cred-bangkit">
+          <div class="cf-subgrid">
+            <div class="cf-subitem">
+              <div class="cf-subname">Google IT Automation with Python</div>
+              <div class="cf-submeta">Google · Score: 87.6 · 74 hrs</div>
+              <a href="https://coursera.org/verify/GCVO2APGWWJN" target="_blank" class="cf-sublink">VERIFY ID <code>GCVO2APGWWJN</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Crash Course on Python</div>
+              <div class="cf-submeta">Google · Score: 87.6</div>
+              <a href="https://coursera.org/verify/84RVEV8OTL9H" target="_blank" class="cf-sublink">VERIFY ID <code>84RVEV8OTL9H</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Generative AI for Everyone</div>
+              <div class="cf-submeta">DeepLearning.AI · Andrew Ng · Score: 92.8</div>
+              <a href="https://coursera.org/verify/H6GXJRWJ3FIN" target="_blank" class="cf-sublink">VERIFY ID <code>H6GXJRWJ3FIN</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Build Basic GANs</div>
+              <div class="cf-submeta">DeepLearning.AI · Score: 92.8 · 29 hrs</div>
+              <a href="https://coursera.org/verify/LNKPE6NE67GP" target="_blank" class="cf-sublink">VERIFY ID <code>LNKPE6NE67GP</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Structuring Machine Learning Projects</div>
+              <div class="cf-submeta">DeepLearning.AI · Score: 81.9</div>
+              <a href="https://coursera.org/verify/EG8B9Y189YZΑ" target="_blank" class="cf-sublink">VERIFY ID <code>EG8B9Y189YZΑ</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Capstone / Product Development</div>
+              <div class="cf-submeta">Sisain Food Waste App · ML & PM Lead · 212 hrs</div>
+              <span class="cf-sublink static">CAPSTONE FINISHED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MASTER 2: DEEPLEARNING.AI TENSORFLOW DEVELOPER -->
+      <div class="cred-flagship-card" data-cat="ml-ai">
+        <div class="cf-main">
+          <div class="cf-left">
+            <div class="tags-row" style="margin-bottom:8px">
+              <span class="tag tag-lilac">PROFESSIONAL SPECIALIZATION</span>
+              <span class="tag">4 ADVANCED MODULES</span>
+            </div>
+            <h3 class="cf-title">DeepLearning.AI TensorFlow Developer Professional Certificate</h3>
+            <p class="cf-issuer">DeepLearning.AI · Laurence Moroney (Lead AI Advocate, Google)</p>
+            <p class="cf-desc">Comprehensive neural network mastery: CNNs for vision, NLP for text processing, Sequences/Time Series forecasting, and distributed deployments.</p>
+          </div>
+          <div class="cf-right">
+            <a href="https://coursera.org/verify/professional-cert/WQ1H2UXJUQPR" target="_blank" class="btn btn-primary cf-btn-verify">VERIFY MASTER CERT ↗</a>
+            <button class="btn btn-outline btn-lilac cf-toggle-btn" onclick="toggleCredDetail('cred-tf', this)">
+              <span>+ VIEW MODULES & DEPLOYMENTS</span>
+            </button>
+          </div>
+        </div>
+        <!-- Expandable Sub-courses drawer -->
+        <div class="cf-drawer" id="cred-tf">
+          <div class="cf-subgrid">
+            <div class="cf-subitem">
+              <div class="cf-subname">Advanced Computer Vision with TensorFlow</div>
+              <div class="cf-submeta">Object detection, segmentation, visualization</div>
+              <a href="https://coursera.org/verify/P63Y77VXR4YF" target="_blank" class="cf-sublink">VERIFY <code>P63Y77VXR4YF</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Sequences, Time Series and Prediction</div>
+              <div class="cf-submeta">RNNs, LSTMs, and Conv1D on time series</div>
+              <a href="https://coursera.org/verify/NFKTP2SBKYCM" target="_blank" class="cf-sublink">VERIFY <code>NFKTP2SBKYCM</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Device-based Models with TensorFlow Lite</div>
+              <div class="cf-submeta">On-device ML optimization for Android/Edge</div>
+              <a href="https://coursera.org/verify/LJCR2EZPFUNT" target="_blank" class="cf-sublink">VERIFY <code>LJCR2EZPFUNT</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Browser-based Models with TensorFlow.js</div>
+              <div class="cf-submeta">Client-side browser ML inference</div>
+              <a href="https://coursera.org/verify/AB17GWP54CPY" target="_blank" class="cf-sublink">VERIFY <code>AB17GWP54CPY</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Data Pipelines with TF Data Services</div>
+              <div class="cf-submeta">High-throughput input pipelines & TFDS</div>
+              <a href="https://coursera.org/verify/QZJ01Z66X14M" target="_blank" class="cf-sublink">VERIFY <code>QZJ01Z66X14M</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Custom Models, Layers & Loss Functions</div>
+              <div class="cf-submeta">Low-level TensorFlow customization</div>
+              <a href="https://coursera.org/verify/947U417S9BDZ" target="_blank" class="cf-sublink">VERIFY <code>947U417S9BDZ</code> ↗</a>
+            </div>
+            <div class="cf-subitem">
+              <div class="cf-subname">Custom & Distributed Training with TF</div>
+              <div class="cf-submeta">Multi-GPU & TPU distributed strategies</div>
+              <a href="https://coursera.org/verify/G47XKH95V7QL" target="_blank" class="cf-sublink">VERIFY <code>G47XKH95V7QL</code> ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MASTER 3: STANFORD MACHINE LEARNING -->
+      <div class="cred-flagship-card" data-cat="ml-ai">
+        <div class="cf-main">
+          <div class="cf-left">
+            <div class="tags-row" style="margin-bottom:8px">
+              <span class="tag tag-periwinkle">ACADEMIC SPECIALIZATION</span>
+              <span class="tag">STANFORD ONLINE</span>
+            </div>
+            <h3 class="cf-title">Machine Learning Specialization</h3>
+            <p class="cf-issuer">DeepLearning.AI · Stanford Online · Prof. Andrew Ng</p>
+            <p class="cf-desc">Rigorous foundation in Supervised Learning (Regression, Classification, Decision Trees), Unsupervised Learning (Clustering, Anomaly Detection), and Recommender Systems.</p>
+          </div>
+          <div class="cf-right">
+            <a href="https://coursera.org/verify/specialization/N2AYIKMCFFFA" target="_blank" class="btn btn-primary cf-btn-verify">VERIFY MASTER CERT ↗</a>
+            <div class="cf-id-badge">ID: N2AYIKMCFFFA</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── TIER 2: COMPACT VERIFICATION MATRIX (Publications, Honors, Languages) ── -->
+    <div class="cred-compact-matrix reveal">
+
+      <!-- Peer Reviewed F1 -->
+      <div class="cred-compact-row" data-cat="research">
+        <div class="ccr-icon">📄</div>
+        <div class="ccr-info">
+          <div class="ccr-title">K-Means Clustering for F1 Driver Performance Analysis</div>
+          <div class="ccr-meta">Jurnal Buffer Informatika · Oct 2025 · Lead Researcher</div>
+        </div>
+        <a href="https://journal.fkom.uniku.ac.id/buffer/article/view/401" target="_blank" class="ccr-link">VIEW ARTICLE ↗</a>
+      </div>
+
+      <!-- Peer Reviewed Skripsi -->
+      <div class="cred-compact-row" data-cat="research">
+        <div class="ccr-icon">📄</div>
+        <div class="ccr-info">
+          <div class="ccr-title">ML Algorithm Comparison for Cosmetic Sales Prediction</div>
+          <div class="ccr-meta">JURTEKSI · Sept 2025 · Thesis Research</div>
+        </div>
+        <a href="https://jurnal.stmikroyal.ac.id/index.php/jurteksi/article/view/4187" target="_blank" class="ccr-link">VIEW ARTICLE ↗</a>
+      </div>
+
+      <!-- Peer Reviewed LPG -->
+      <div class="cred-compact-row" data-cat="research">
+        <div class="ccr-icon">📄</div>
+        <div class="ccr-info">
+          <div class="ccr-title">LPG 3KG Distribution Clustering — Subsidy Equity Analysis</div>
+          <div class="ccr-meta">Jurnal Buffer Informatika · April 2025</div>
+        </div>
+        <a href="https://journal.fkom.uniku.ac.id/buffer/article/view/385" target="_blank" class="ccr-link">VIEW ARTICLE ↗</a>
+      </div>
+
+      <!-- EF SET C2 -->
+      <div class="cred-compact-row" data-cat="research">
+        <div class="ccr-icon">🌐</div>
+        <div class="ccr-info">
+          <div class="ccr-title">EF SET English Certificate — 72/100 (C2 Proficient)</div>
+          <div class="ccr-meta">EF Standard English Test · April 2026</div>
+        </div>
+        <span class="tag tag-yellow">C2 PROFICIENT</span>
+      </div>
+
+      <!-- Best Core Team -->
+      <div class="cred-compact-row" data-cat="org">
+        <div class="ccr-icon">🏆</div>
+        <div class="ccr-info">
+          <div class="ccr-title">Best Core Team Member Award</div>
+          <div class="ccr-meta">Google Developer Group on Campus UNSRI · 2025</div>
+        </div>
+        <span class="tag tag-yellow">HONOR</span>
+      </div>
+
+      <!-- SIFEST 3rd -->
+      <div class="cred-compact-row" data-cat="research">
+        <div class="ccr-icon">🥉</div>
+        <div class="ccr-info">
+          <div class="ccr-title">3rd Place — UI/UX Design Competition (Yappy App)</div>
+          <div class="ccr-meta">SIFEST 2024 · Universitas Sriwijaya</div>
+        </div>
+        <span class="tag tag-yellow">AWARD</span>
+      </div>
+
+      <!-- Telkom Digistar -->
+      <div class="cred-compact-row" data-cat="org">
+        <div class="ccr-icon">🎖️</div>
+        <div class="ccr-info">
+          <div class="ccr-title">Digistar Connect Committee Appreciation</div>
+          <div class="ccr-meta">PT Telkom Indonesia (Persero) Tbk · March 2025</div>
+        </div>
+        <div class="ccr-badge-id">005/CC-UNSRI/DigiClub/III/2025</div>
+      </div>
+
+      <!-- Linear Algebra DeepLearning.AI -->
+      <div class="cred-compact-row" data-cat="ml-ai">
+        <div class="ccr-icon">📐</div>
+        <div class="ccr-info">
+          <div class="ccr-title">Linear Algebra for ML & Data Science</div>
+          <div class="ccr-meta">DeepLearning.AI · Oct 2024</div>
+        </div>
+        <div class="ccr-badge-id">ID: <code>EIXMUY4EE75M</code></div>
+      </div>
+
+      <!-- HackerRank SQL -->
+      <div class="cred-compact-row" data-cat="org">
+        <div class="ccr-icon">🗄️</div>
+        <div class="ccr-info">
+          <div class="ccr-title">SQL (Basic) Certificate</div>
+          <div class="ccr-meta">HackerRank · June 2024</div>
+        </div>
+        <span class="tag">VERIFIED</span>
+      </div>
+
+      <!-- Dicoding Foundations -->
+      <div class="cred-compact-row" data-cat="org">
+        <div class="ccr-icon">💻</div>
+        <div class="ccr-info">
+          <div class="ccr-title">Software Development & Git Mastery</div>
+          <div class="ccr-meta">Dicoding Indonesia · 3 Certificates · Valid until 2027</div>
+        </div>
+        <span class="tag">DEV STACK</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     TOOLKIT
+     ================================================================ -->
+<section id="toolkit">
+  <div class="wrap">
+    <div class="eyebrow">Tools &amp; Skills</div>
+    <h2 class="sec-title">The toolkit.</h2>
+    <p class="sec-sub">Tools I use to design, analyze, build, and coordinate projects.</p>
+
+    <div class="toolkit-grid reveal">
+      <!-- Design -->
+      <div class="tk-category">
+        <div class="tk-cat-header">
+          <div class="tk-cat-accent" style="background:var(--lilac)"></div>
+          <div class="tk-cat-name">Design</div>
+        </div>
+        <div class="tk-chips">
+          <div class="tk-chip" style="border-color:var(--lilac)"><span class="tk-chip-dot" style="background:var(--lilac)"></span>Figma</div>
+          <div class="tk-chip" style="border-color:var(--lilac)"><span class="tk-chip-dot" style="background:var(--lilac)"></span>FigJam</div>
+          <div class="tk-chip" style="border-color:var(--lilac)"><span class="tk-chip-dot" style="background:var(--lilac)"></span>Maze</div>
+          <div class="tk-chip" style="border-color:var(--lilac)"><span class="tk-chip-dot" style="background:var(--lilac)"></span>Canva</div>
+          <div class="tk-chip" style="border-color:var(--lilac)"><span class="tk-chip-dot" style="background:var(--lilac)"></span>Capcut</div>
+        </div>
+      </div>
+
+      <!-- Data & ML -->
+      <div class="tk-category">
+        <div class="tk-cat-header">
+          <div class="tk-cat-accent" style="background:var(--mint)"></div>
+          <div class="tk-cat-name">Data &amp; ML</div>
+        </div>
+        <div class="tk-chips">
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>Python</div>
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>Pandas</div>
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>Scikit-learn</div>
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>TensorFlow</div>
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>Jupyter Notebook</div>
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>Google Colab</div>
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>Tableau</div>
+          <div class="tk-chip" style="border-color:var(--mint)"><span class="tk-chip-dot" style="background:var(--mint)"></span>SQL</div>
+        </div>
+      </div>
+
+      <!-- Dev & Production -->
+      <div class="tk-category">
+        <div class="tk-cat-header">
+          <div class="tk-cat-accent" style="background:var(--coral)"></div>
+          <div class="tk-cat-name">Dev &amp; Production</div>
+        </div>
+        <div class="tk-chips">
+          <div class="tk-chip" style="border-color:var(--coral)"><span class="tk-chip-dot" style="background:var(--coral)"></span>HTML5</div>
+          <div class="tk-chip" style="border-color:var(--coral)"><span class="tk-chip-dot" style="background:var(--coral)"></span>CSS3</div>
+          <div class="tk-chip" style="border-color:var(--coral)"><span class="tk-chip-dot" style="background:var(--coral)"></span>Postman</div>
+          <div class="tk-chip" style="border-color:var(--coral)"><span class="tk-chip-dot" style="background:var(--coral)"></span>Git</div>
+          <div class="tk-chip" style="border-color:var(--coral)"><span class="tk-chip-dot" style="background:var(--coral)"></span>GitHub</div>
+        </div>
+      </div>
+
+      <!-- PM & Ops -->
+      <div class="tk-category">
+        <div class="tk-cat-header">
+          <div class="tk-cat-accent" style="background:var(--periwinkle)"></div>
+          <div class="tk-cat-name">PM &amp; Ops</div>
+        </div>
+        <div class="tk-chips">
+          <div class="tk-chip" style="border-color:var(--periwinkle)"><span class="tk-chip-dot" style="background:var(--periwinkle)"></span>Notion</div>
+          <div class="tk-chip" style="border-color:var(--periwinkle)"><span class="tk-chip-dot" style="background:var(--periwinkle)"></span>Google Workspace</div>
+          <div class="tk-chip" style="border-color:var(--periwinkle)"><span class="tk-chip-dot" style="background:var(--periwinkle)"></span>Excel</div>
+          <div class="tk-chip" style="border-color:var(--periwinkle)"><span class="tk-chip-dot" style="background:var(--periwinkle)"></span>Miro</div>
+          <div class="tk-chip" style="border-color:var(--periwinkle)"><span class="tk-chip-dot" style="background:var(--periwinkle)"></span>Slack</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CONTACT
+     ================================================================ -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="eyebrow">Let's work together</div>
+    <div class="contact-title">LET'S BUILD<br>SOMETHING<br>THAT MATTERS.</div>
+    <div class="contact-sub">Open to PM, UI/UX, and data analyst roles.<br>Palembang, Indonesia · 2026 Fresh Graduate · Responding within 48h.</div>
+
+    <div class="contact-roles">
+      <span class="contact-role-pill">PRODUCT MANAGER</span>
+      <span class="contact-role-pill">UI/UX DESIGNER</span>
+      <span class="contact-role-pill">DATA ANALYST</span>
+    </div>
+
+    <div class="contact-ctas">
+      <button class="contact-btn-primary" onclick="copyEmail()">
+        ✉ COPY EMAIL ADDRESS
+      </button>
+      <a href="mailto:mutiashrjh@gmail.com" class="contact-btn-ghost">OPEN IN MAIL →</a>
+    </div>
+
+    <div class="contact-divider"></div>
+
+    <div style="display:flex;justify-content:center;gap:32px;margin-bottom:40px">
+      <a href="https://linkedin.com/in/mutiasahira/" class="contact-btn-ghost" target="_blank">LINKEDIN →</a>
+      <a href="https://github.com/mutiashr" class="contact-btn-ghost" target="_blank">GITHUB →</a>
+    </div>
+
+    <div class="contact-note">MUTIA SAHIRA · 2026 · PALEMBANG, INDONESIA</div>
+  </div>
+</section>
+
+<!-- ================================================================
+     MODALS — Design project details
+     ================================================================ -->
+<div class="modal-backdrop" id="modal-uokey" onclick="closeModalOutside(event,'modal-uokey')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Mobile App · Mental Health</div>
+        <div class="modal-title">Uokey — Mental Health Companion</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-uokey')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">MOBILE</span><span class="tag">MENTAL HEALTH</span><span class="tag">ACADEMIC PROJECT</span></div>
+      <div class="modal-img"><img src="assets/uokey.png" alt="Uokey Interface"></div>
+      <div class="modal-desc">Mood tracking and psychological self-assessment app. Research-driven design with careful tone and color psychology to create a safe, non-clinical experience for users seeking mental wellness support. Designed to reduce stigma through warm, accessible interaction patterns.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/QI9XvZugmmVgH7I5p3rkCj/UTS-PSIKOPEN_MENTAL-HEALTH-TEST?page-id=0%3A1&node-id=137-1312&p=f&viewport=157%2C287%2C0.06&t=8gqa7SeHwKBJPrsb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=182%3A481" class="btn btn-outline btn-lilac" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-sigap" onclick="closeModalOutside(event,'modal-sigap')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Mobile App · e-Government</div>
+        <div class="modal-title">SIGAP — Public Service App</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-sigap')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">MOBILE</span><span class="tag tag-periwinkle">E-GOVERNMENT</span><span class="tag">ACADEMIC PROJECT</span></div>
+      <div class="modal-img"><img src="assets/sigap.png" alt="SIGAP Interface"></div>
+      <div class="modal-desc">Digital platform simplifying access to government administrative documents. Designed for broad demographics including non-tech-savvy users — maximum accessibility, minimum cognitive load. UX decisions centered on reducing the gap between citizens and public services.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/s7vzWcX1YbIAA6lof4zNX7/SIGAP-PART-2?page-id=0%3A1&node-id=34-1496&p=f&viewport=286%2C-76%2C0.04&t=JKEaFkx3gGMBCePD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=34%3A1496" class="btn btn-outline btn-periwinkle" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-cinta" onclick="closeModalOutside(event,'modal-cinta')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Mobile Donation App · Freelance</div>
+        <div class="modal-title">Cinta Beramal — Donation Platform</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-cinta')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">MOBILE</span><span class="tag tag-peach">FREELANCE</span><span class="tag">SOCIAL IMPACT</span></div>
+      <div class="modal-img"><img src="assets/cintaberamal.png" alt="Cinta Beramal Interface"></div>
+      <div class="modal-desc">Trust-centered donation platform connecting donors to causes. Transparent campaign displays and warm visual language designed to maximize emotional engagement and giving confidence. Freelance commission with real client requirements.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/U31bjDd9h6LKAQ0EA0GqbM/cinta-beramal?page-id=0%3A1&node-id=11-4175&p=f&viewport=477%2C36%2C0.23&t=gUkqltsI8pi2yXz1-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A8" class="btn btn-outline btn-lilac" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-eternaluxe" onclick="closeModalOutside(event,'modal-eternaluxe')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Web · Fashion E-Commerce</div>
+        <div class="modal-title">EternaLuxe — Fashion Store</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-eternaluxe')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">WEB</span><span class="tag">E-COMMERCE</span><span class="tag">FASHION</span></div>
+      <div class="modal-img"><img src="assets/eternaluxe.png" alt="EternaLuxe Interface"></div>
+      <div class="modal-desc">Editorial e-commerce experience for a fashion brand. Clean product discovery, intuitive filtering, and a seamless checkout flow — designed for the style-conscious, modern shopper. Focus on visual hierarchy and conversion-oriented UX.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/O6N7pxiwkJwO48gw76axW9/EternaLuxe?page-id=0%3A1&node-id=4-8910&viewport=-58%2C-193%2C0.16&t=f0bwzv0CIr3dwJWt-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A8910&show-proto-sidebar=1" class="btn btn-outline btn-lilac" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-axdif" onclick="closeModalOutside(event,'modal-axdif')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Web App · SaaS HR Dashboard</div>
+        <div class="modal-title">Axdif — Recruitment Management Dashboard</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-axdif')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">WEB APP</span><span class="tag">SAAS</span><span class="tag">HR</span><span class="tag">TAKE-HOME ASSIGNMENT</span></div>
+      <div class="modal-img"><img src="assets/axdif.png" alt="Axdif HR Dashboard"></div>
+      <div class="modal-desc">Designed a focused HR dashboard to streamline the recruitment workflow — from tracking applicants to managing hiring stages in a clear, structured interface. Completed as a take-home design assignment demonstrating SaaS dashboard design capability.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/JT4mCly4YQdLA3O4R9fKWl/UIUX-ELABRAM?page-id=0%3A1&node-id=33-16468&p=f&viewport=569%2C-3660%2C0.99&t=8L0y6QVLyWWuc8mI-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=33%3A16468" class="btn btn-outline btn-lilac" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-pkse" onclick="closeModalOutside(event,'modal-pkse')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Web Development · Organizational</div>
+        <div class="modal-title">PKSE UNSRI — Organization Profile Website</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-pkse')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">WEB</span><span class="tag">ORGANIZATIONAL</span></div>
+      <div class="modal-img"><img src="assets/pkse.png" alt="PKSE UNSRI Website"></div>
+      <div class="modal-desc">Centralized web platform for Paguyuban Karya Salemba Empat Universitas Sriwijaya. Structured content architecture covering vision, mission, board members, and programs — presenting organizational identity and streamlining public communication.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/WMPiQkMTE18ZiQxzC7fNej/WEB-PKSE-UNSRI?page-id=0%3A1&node-id=2106-3051&p=f&viewport=-4276%2C271%2C0.34&t=n91KTqUi8eswr95l-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2084%3A1912&show-proto-sidebar=1" class="btn btn-outline btn-lilac" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-langkah" onclick="closeModalOutside(event,'modal-langkah')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Mobile App · Accessibility · Freelance</div>
+        <div class="modal-title">Langkah Mandiri — Audio Adventure Game</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-langkah')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">MOBILE</span><span class="tag tag-mint">ACCESSIBILITY</span><span class="tag tag-peach">FREELANCE</span></div>
+      <div class="modal-img"><img src="assets/langkahmandiri.png" alt="Langkah Mandiri App"></div>
+      <div class="modal-desc">Designed an accessible audio-based mobile experience for a client project, focusing on voice navigation, haptic feedback, and inclusive interactions for visually impaired users. Translated the client's concept into user flows, interface designs, and interactive prototypes to create an engaging and accessible digital experience.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/oIXYDt0YZTehGA4HtoP2P1/Langkah-Mandiri--For-Public-?page-id=0%3A1&node-id=7-803&p=f&viewport=408%2C-313%2C0.46&t=vwELm1nxVyIkrXlY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A580" class="btn btn-outline btn-mint" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-mojokerto" onclick="closeModalOutside(event,'modal-mojokerto')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-type">Website · Government Redesign · Freelance</div>
+        <div class="modal-title">Mojokerto Kabupaten — Public Information Portal</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-mojokerto')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="tags-row" style="margin-bottom:16px"><span class="tag tag-lilac">WEB</span><span class="tag tag-periwinkle">GOVERNMENT</span><span class="tag tag-peach">FREELANCE</span></div>
+      <div class="modal-img"><img src="assets/mojokerto.png" alt="Mojokerto Government Website"></div>
+      <div class="modal-desc">Redesigned the official Mojokerto Regency government website. New information architecture, improved user flow, and a more accessible experience for citizens. Transformed complex government information into a clearer interface with structured navigation, public services, news, reports, and digital resources through a user-centered design approach.</div>
+      <div class="modal-links">
+        <a href="https://www.figma.com/proto/Ih6nvu1ocTSaEF5hMtIV6d/redesign-web-mojokerto--Public-View-?node-id=8-2419&viewport=1237%2C49%2C0.12&t=uVshUro5CNSn8NsX-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A599&page-id=0%3A1" class="btn btn-outline btn-periwinkle" target="_blank">VIEW PROTOTYPE →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Multimedia modals -->
+<div class="modal-backdrop" id="modal-mm1" onclick="closeModalOutside(event,'modal-mm1')">
+  <div class="modal-box">
+    <div class="modal-header"><div><div class="modal-type">Multimedia · Organizational</div><div class="modal-title">PKSE UNSRI — Instagram Publications</div></div><button class="modal-close" onclick="closeModal('modal-mm1')">×</button></div>
+    <div class="modal-body"><div class="modal-img"><img src="assets/kse1.png" alt="PKSE UNSRI Publication"></div><div class="modal-desc">Instagram publication design for PKSE UNSRI. Part of the 300+ client, 500+ deliverable freelance design portfolio (2021–present).</div></div>
+  </div>
+</div>
+<div class="modal-backdrop" id="modal-mm2" onclick="closeModalOutside(event,'modal-mm2')">
+  <div class="modal-box">
+    <div class="modal-header"><div><div class="modal-type">Multimedia · Organizational</div><div class="modal-title">PKSE UNSRI — Board Profile</div></div><button class="modal-close" onclick="closeModal('modal-mm2')">×</button></div>
+    <div class="modal-body"><div class="modal-img"><img src="assets/kse2.png" alt="PKSE UNSRI Board Profile"></div><div class="modal-desc">Board profile design series for PKSE UNSRI organizational identity. From the 500+ deliverable freelance portfolio.</div></div>
+  </div>
+</div>
+<div class="modal-backdrop" id="modal-mm3" onclick="closeModalOutside(event,'modal-mm3')">
+  <div class="modal-box">
+    <div class="modal-header"><div><div class="modal-type">Multimedia · Education</div><div class="modal-title">KSE UNSRI Scholarship Registration</div></div><button class="modal-close" onclick="closeModal('modal-mm3')">×</button></div>
+    <div class="modal-body"><div class="modal-img"><img src="assets/kse3.png" alt="KSE UNSRI Scholarship"></div><div class="modal-desc">Visual campaign design for KSE UNSRI scholarship registration. Part of the ongoing freelance design practice.</div></div>
+  </div>
+</div>
+<div class="modal-backdrop" id="modal-mm4" onclick="closeModalOutside(event,'modal-mm4')">
+  <div class="modal-box">
+    <div class="modal-header"><div><div class="modal-type">Multimedia · Social Media</div><div class="modal-title">Social Media &amp; Instagram Story Design</div></div><button class="modal-close" onclick="closeModal('modal-mm4')">×</button></div>
+    <div class="modal-body"><div class="modal-img"><img src="assets/kse5.png" alt="Social Media Design"></div><div class="modal-desc">Social media insights and Instagram story design for organizational communications. 300+ clients served since 2021.</div></div>
+  </div>
+</div>
+<div class="modal-backdrop" id="modal-mm5" onclick="closeModalOutside(event,'modal-mm5')">
+  <div class="modal-box">
+    <div class="modal-header"><div><div class="modal-type">Multimedia · Education</div><div class="modal-title">Rumah Belajar Sriwijaya Publication</div></div><button class="modal-close" onclick="closeModal('modal-mm5')">×</button></div>
+    <div class="modal-body"><div class="modal-img"><img src="assets/kse4.png" alt="Rumah Belajar Sriwijaya"></div><div class="modal-desc">Publication design for Rumah Belajar Sriwijaya educational community outreach program.</div></div>
+  </div>
+</div>
+<div class="modal-backdrop" id="modal-mm6" onclick="closeModalOutside(event,'modal-mm6')">
+  <div class="modal-box">
+    <div class="modal-header"><div><div class="modal-type">Multimedia · Freelance</div><div class="modal-title">Freelance Infographic Work</div></div><button class="modal-close" onclick="closeModal('modal-mm6')">×</button></div>
+    <div class="modal-body"><div class="modal-img"><img src="assets/kse6.png" alt="Freelance Infographic"></div><div class="modal-desc">Infographic design from the freelance portfolio. 500+ digital assets delivered for 300+ clients since 2021 — promotional videos, presentations, branding, and digital campaigns.</div></div>
+  </div>
+</div>
+
+<!-- Copy email toast -->
+<div class="copy-toast" id="copy-toast">✓ EMAIL COPIED — mutiashrjh@gmail.com</div>
+
+<script src="script.js"></script>
+</body>
+</html>
